@@ -1,0 +1,145 @@
+* {
+    --base: #FFFFFF;
+    --borderColor: #ff9d9d;
+    --cardColors: rgba(255, 253, 253, 0.82);
+    --accentColor1: #b91414; 
+    --accentColor2: #3d30ac; 
+    --accentColor3: #e9bc43;
+    --accentColor4: rgb(18, 172, 64); 
+    --accentColor5: rgb(230, 140, 22);
+    color: rgb(22, 20, 20); 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+#header {
+    font-size: 50px;
+    text-align: center;
+}
+
+header::first-letter{
+    font-size: 70px;
+}
+
+header::first-letter{
+    color: var(--accentColor1);
+}
+
+
+#at-a-glance-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+#at-a-glance-title::first-letter{
+    color: var(--accentColor2);
+}
+
+#drawing-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+#drawing-title::first-letter{
+    color: var(--accentColor3);
+}
+
+#drawing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+img[alt="connie drawing"] {
+    object-position: center top;
+}
+
+#video-games-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+#video-games-title::first-letter{
+    color: var(--accentColor4);
+}
+
+#contact-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+#contact-title::first-letter{
+    color: var(--accentColor5);
+}
+
+body {
+    background-color: #faf7f7;
+    background-image: url(./assets/silly.jpg);
+    padding-left: 60px;
+    padding-right: 60px; 
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+
+}
+
+.cards div {
+
+    background-color: var(--cardColors);
+    padding: 20px; 
+   
+    border-radius: 4px;
+    width: 500px;
+    max-width: 100%;
+    box-sizing: border-box; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 24px; 
+    transition: all 500ms; 
+
+}
+
+.cards img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 2px 1px 1px rgba(0,0,0,.4);
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.card div:hover {
+
+    box-shadow: 0 0 12px var(--accentColor1);
+
+}
+
+.card-gallery.grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 12px;
+    margin: 16px 0;
+    height: 250px; 
+}
+
+.card-gallery.grid-layout img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-gallery div:hover {
+
+    box-shadow: 0 0 12px var(--accentColor1);
+
+}
+
+.shadow-outline {
+  text-shadow: 
+    -2px -2px 0 #fdfdfd,  
+     1px -1px 0 #fcfcfc,
+    -4px  4px 0 #ffffff,
+     1px  1px 0 #ffffff;
+}
